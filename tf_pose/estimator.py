@@ -6,9 +6,9 @@ import slidingwindow as sw
 import cv2
 import numpy as np
 import time
-import tensorflow as tf
-# import tensorflow.compat.v1 as tf   #added
-# tf.disable_v2_behaviour()   #added
+# import tensorflow as tf  #original
+import tensorflow.compat.v1 as tf   #added
+tf.disable_v2_behaviour()   #added
 
 from tf_pose import common
 from tf_pose.common import CocoPart
